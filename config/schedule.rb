@@ -18,3 +18,9 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+#
+
+every 30.minutes do
+  c = 'osascript -e "display notification \"`date +"%H:%M"` です\" with title \"ちゃんと働いて下さい\" "'
+  command c
+end
